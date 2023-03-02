@@ -16,5 +16,38 @@ namespace troca_de_imagem
         {
             InitializeComponent();
         }
+
+        private void buttonMostrar_Click(object sender, EventArgs e)
+        {
+            this.DogPicBox.Visible = true;
+        }
+
+        private void buttonApagar_Click(object sender, EventArgs e)
+        {
+            this.DogPicBox.Visible = false;
+        }
+
+        private void buttonMostrar2_Click(object sender, EventArgs e)
+        {
+            this.CatDogPicBox.Visible = true;
+        }
+
+        private void buttonApagar2_Click(object sender, EventArgs e)
+        {
+            this.CatDogPicBox.Visible = false;
+        }
+
+        private void buttonFechar_Click(object sender, EventArgs e)
+        {
+            this.CatDogPicBox.Visible = false;
+            this.DogPicBox.Visible = false;
+        }
+
+        private void buttonAbrir_Click(object sender, EventArgs e)
+        {
+            this.CatDogPicBox.Visible = true;
+            this.DogPicBox.Visible = true;
+
+        }
     }
 }
